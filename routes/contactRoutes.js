@@ -1,49 +1,52 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
-const Contact = require('../models/Contact');
-const nodemailer = require('nodemailer');
+const nodemailer = require("nodemailer");
 
-// POST /api/contact
-router.post('/', async (req, res) => {
-    const { name, email, phone, subject, message } = req.body;
+router.post("/", async (req, res) => {
+  try {
+    const { name, email, phone, website, message } = req.body;
 
-    try {
-        // Save to MongoDB
-        const newContact = new Contact({ name, email, phone, subject, message });
-        await newContact.save();
-
-        // Optional: Send email notification
-        const transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: process.env.EMAIL_USER,
-                pass: process.env.EMAIL_PASS
-            }
-        });
-
-        const mailOptions = {
-            from: process.env.EMAIL_USER,
-            to: 'itdesk@gmail.com',  // Replace with your email
-            subject: `New Contact Form Submission: ${subject}`,
-            html: `<p><strong>Name:</strong> ${name}</p>
-                   <p><strong>Email:</strong> ${email}</p>
-                   <p><strong>Phone:</strong> ${phone}</p>
-                   <p><strong>Message:</strong><br>${message}</p>`
-        };
-
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.log(error);
-            } else {
-                console.log('Email sent: ' + info.response);
-            }
-        });
-
-        res.status(200).json({ success: true, message: 'Message submitted successfully!' });
-    } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, message: 'Server Error' });
+    if (!name || !email || !message) {
+      return res.status(400).json({ success: false, error: "Please fill all required fields." });
     }
+
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    transporter.verify((error) => {
+      if (error) console.error("SMTP Error:", error);
+      else console.log("SMTP ready");
+    });
+
+    const mailOptions = {
+      from: `"Excerpt Trainings" <${process.env.EMAIL_USER}>`,
+      to: "excerpt.trainings@gmail.com", // Target email
+      subject: `New Contact Form Submission - ${name}`,
+      html: `
+        <h3>New Contact Form Submission</h3>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "N/A"}</p>
+        <p><strong>Website:</strong> ${website || "N/A"}</p>
+        <p><strong>Message:</strong></p>
+        <p>${message}</p>
+      `,
+    };
+
+    await transporter.sendMail(mailOptions);
+
+    return res.status(200).json({ success: true, message: "Message sent successfully!" });
+  } catch (error) {
+    console.error("Error in contact form:", error);
+    return res.status(500).json({ success: false, error: "Failed to send message." });
+  }
 });
 
 module.exports = router;
