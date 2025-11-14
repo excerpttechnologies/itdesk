@@ -2520,183 +2520,1006 @@ const Register = () => {
     ] })
   ] }) }) });
 };
-const itCoursesData = [
+const allCourses = [
+  // ************************************
+  //          IT COURSES (1–20)
+  // ************************************
   {
     id: 1,
     title: "Digital Marketing",
     image: "/assests/images/digital_marketting.webp",
-    description: "A most powerful tool to grow business and increase reach worldwide.",
-    link: "/digitalmarketing"
+    longDescription: "Digital Marketing is one of the most effective strategies to promote products and services online. This course teaches SEO, SEM, Google Ads, Social Media, Email Marketing, Branding, Content Strategy, and Analytics. Students learn how to run real-world campaigns and measure marketing ROI. Ideal for freshers, business owners, and professionals.",
+    syllabus: [
+      "Introduction to Digital Marketing",
+      "SEO On-page & Off-page",
+      "Google Ads – Search, Display & Video",
+      "Facebook & Instagram Ads",
+      "Social Media Optimization",
+      "Email Marketing Tools",
+      "Content Strategy & Branding",
+      "Google Analytics & Reporting"
+    ]
   },
   {
     id: 2,
     title: "Data Science with Python",
     image: "/assests/images/ds-with-python.webp",
-    description: "Data science with Python performs data analysis, data visualization.",
-    link: "/python"
+    longDescription: "This course covers the essential tools and concepts of Data Science using Python. You will learn to clean, analyze, visualize, and interpret data using libraries like NumPy, Pandas, and Matplotlib. The course also includes machine learning basics and real-world projects.",
+    syllabus: [
+      "Python Basics",
+      "Data Handling with NumPy & Pandas",
+      "Data Visualization Tools",
+      "Statistics for Data Science",
+      "Exploratory Data Analysis",
+      "Machine Learning Algorithms",
+      "Model Training & Evaluation",
+      "Final ML Project"
+    ]
   },
   {
     id: 3,
     title: "JAVA",
     image: "/assests/images/ds-with-r.webp",
-    description: "Data Science with R provides the skills required to work with real data sets",
-    link: "/corejava"
+    longDescription: "This course covers the fundamentals of Core Java. Learn OOP principles, exception handling, file handling, multithreading, collections, JDBC, and more. Ideal for software development roles and backend programming.",
+    syllabus: [
+      "Java Basics & OOP Concepts",
+      "Packages & Interfaces",
+      "Exception Handling",
+      "Collections Framework",
+      "Threads & Multithreading",
+      "File Handling",
+      "JDBC Connectivity",
+      "Mini Projects"
+    ]
   },
   {
     id: 4,
-    title: "Mern Stack Development",
+    title: "MERN Stack Development",
     image: "/assests/images/meanstack.webp",
-    description: "MEAN is an acronym for MongoDB, Express.js and Angularjs, all of which function upon Node.js",
-    link: "/mernstack"
+    longDescription: "This course teaches end-to-end full-stack development using MongoDB, Express.js, React.js, and Node.js. Build scalable, modern web applications with complete front-end and back-end integration.",
+    syllabus: [
+      "HTML, CSS & JavaScript",
+      "React.js Frontend Development",
+      "Node.js & Express.js Backend",
+      "MongoDB Database",
+      "REST API Development",
+      "Authentication & JWT",
+      "State Management",
+      "Full MERN Project"
+    ]
   },
   {
     id: 5,
     title: ".NET",
     image: "/assests/images/tableau.webp",
-    description: "Most powerful, secure, and flexible end-to-end analytics platform for data",
-    link: "/.net"
+    longDescription: ".NET development teaches building Windows, web, and enterprise applications using C# and ASP.NET. Learn MVC, Entity Framework, SQL database connectivity, and API development.",
+    syllabus: [
+      "C# Basics & OOP",
+      ".NET Framework & CLR",
+      "ASP.NET MVC Architecture",
+      "Entity Framework",
+      "LINQ Queries",
+      "SQL Server Integration",
+      "Web API Development",
+      "Final .NET Project"
+    ]
   },
   {
     id: 6,
     title: "Python",
     image: "/assests/images/python2.webp",
-    description: "high-level programming language with dynamic semantics developed by Guido van Rossum.",
-    link: "/python"
+    longDescription: "Python is a simple and powerful programming language widely used in automation, web development, data science, and AI. This beginner-friendly course covers syntax, functions, file handling, modules, and real-world tasks.",
+    syllabus: [
+      "Python Syntax & Variables",
+      "Functions & Loops",
+      "Modules & Packages",
+      "Error Handling",
+      "File Handling",
+      "Data Structures",
+      "OOP Concepts",
+      "Mini Projects"
+    ]
   },
   {
     id: 7,
     title: "Ethical Hacking",
     image: "/assests/images/hacking.webp",
-    description: "To legally break into computers and networks to test an organizations overall security",
-    link: "/ethicalhacking"
+    longDescription: "Ethical Hacking teaches penetration testing, system security, network vulnerabilities, and cyber attack prevention. Learn tools like Metasploit, Nmap, Burp Suite, and Kali Linux.",
+    syllabus: [
+      "Networking Fundamentals",
+      "Linux Basics",
+      "Footprinting & Scanning",
+      "Vulnerability Analysis",
+      "System Hacking",
+      "Wi-Fi Hacking",
+      "Web App Attacks",
+      "Cyber Security Projects"
+    ]
   },
   {
     id: 8,
     title: "Fullstack Developer",
     image: "/assests/images/full-stack.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/fullstack"
+    longDescription: "A fullstack developer works on both frontend and backend technologies including HTML, CSS, JS, React, Node.js, SQL/NoSQL databases, API development, and deployment.",
+    syllabus: [
+      "Frontend Basics",
+      "React.js Development",
+      "Backend with Node.js",
+      "MySQL & MongoDB",
+      "API Development",
+      "Authentication & JWT",
+      "Hosting & Deployment",
+      "Fullstack Projects"
+    ]
   },
   {
     id: 9,
     title: "C Sharp",
     image: "/assests/images/csharp.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/csharp"
+    longDescription: "C# is a powerful object-oriented programming language used for Windows apps, game development, and enterprise software. Learn everything from basics to advanced concepts.",
+    syllabus: [
+      "C# Syntax",
+      "OOP Concepts",
+      "Exception Handling",
+      "Collections & Generics",
+      "Delegates & Events",
+      "LINQ",
+      "Windows App Dev",
+      "Mini Project"
+    ]
   },
   {
     id: 10,
-    title: "C programming",
+    title: "C Programming",
     image: "/assests/images/cp.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/cprogramming"
+    longDescription: "C programming is the foundation of system programming and embedded systems. Learn variables, loops, functions, pointers, memory management, and structures.",
+    syllabus: [
+      "C Basics",
+      "Control Structures",
+      "Functions",
+      "Pointers",
+      "Arrays & Strings",
+      "Structures & Unions",
+      "File Handling",
+      "Mini Projects"
+    ]
   },
   {
     id: 11,
-    title: "Android",
+    title: "Android Development",
     image: "/assests/images/cg1.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/android"
+    longDescription: "This course covers Android app development using Java/Kotlin. Learn UI design, activities, intents, API integration, Firebase, and deployment.",
+    syllabus: [
+      "Android Studio Setup",
+      "XML UI Design",
+      "Activities & Intents",
+      "RecyclerView & Navigation",
+      "API & JSON Parsing",
+      "Firebase Integration",
+      "Push Notifications",
+      "Final App Project"
+    ]
   },
   {
     id: 12,
-    title: "JAVA Fullstack Development",
+    title: "Java Fullstack Development",
     image: "/assests/images/cg2.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/fullstack"
+    longDescription: "Learn complete fullstack development using Java, Spring Boot, React/Angular, and MySQL. Covers backend, frontend, APIs, and deployment.",
+    syllabus: [
+      "Core Java",
+      "JDBC & Hibernate",
+      "Spring Boot Development",
+      "REST API Creation",
+      "React/Angular Basics",
+      "MySQL Database",
+      "Microservices Basics",
+      "Fullstack Project"
+    ]
   },
   {
     id: 13,
     title: "PHP",
     image: "/assests/images/download2.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/php"
+    longDescription: "Learn PHP for backend development including syntax, forms, sessions, authentication, MySQL integration, and MVC patterns.",
+    syllabus: [
+      "PHP Syntax",
+      "Forms & Sessions",
+      "PHP & MySQL",
+      "Authentication System",
+      "OOP in PHP",
+      "Laravel Basics",
+      "REST API",
+      "PHP Project"
+    ]
   },
   {
     id: 14,
     title: "Selenium Testing",
     image: "/assests/images/download3.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/selenium"
+    longDescription: "This course covers automation testing using Selenium WebDriver with Java. Learn frameworks like TestNG, Page Object Model, and automation scripts.",
+    syllabus: [
+      "Automation Testing Basics",
+      "Java for Testers",
+      "Selenium WebDriver",
+      "Locators & WebElements",
+      "TestNG Framework",
+      "Page Object Model",
+      "Automation Project",
+      "CI/CD Basics"
+    ]
   },
   {
     id: 15,
     title: "AWS",
     image: "/assests/images/download4.webp",
-    description: "A professional responsible for working on both front-end and back-end development processes.",
-    link: "/aws"
+    longDescription: "AWS Cloud Computing course covers EC2, S3, IAM, VPC, Load Balancers, Auto Scaling, Lambda, and DevOps basics. Ideal for cloud roles.",
+    syllabus: [
+      "Cloud Basics",
+      "EC2 & Load Balancers",
+      "S3 Buckets",
+      "IAM Security",
+      "VPC Networking",
+      "AWS Lambda",
+      "RDS & DynamoDB",
+      "Deployment Project"
+    ]
   },
   {
     id: 16,
     title: "MYSQL",
     image: "/assests/images/download5.webp",
-    description: "Fully managed database service for transactions, real-time analytics across data warehouses.",
-    link: "/mysql"
+    longDescription: "Learn MySQL from basics to advanced database operations. Covers DDL, DML, Joins, Indexing, Stored Procedures, and Optimization.",
+    syllabus: [
+      "Database Basics",
+      "SQL Commands",
+      "Joins & Subqueries",
+      "Functions",
+      "Views & Indexes",
+      "Stored Procedures",
+      "Triggers",
+      "DB Project"
+    ]
   },
   {
     id: 17,
     title: "Basic MS Office",
     image: "/assests/images/ms1.webp",
-    description: "Fully managed database service for transactions, real-time analytics across data warehouses.",
-    link: "/msoffice"
+    longDescription: "This course covers MS Word, Excel, PowerPoint, and basic computer usage. Perfect for beginners and office job seekers.",
+    syllabus: [
+      "Word Basics",
+      "Excel Basics",
+      "PowerPoint Slides",
+      "Typing & File Handling",
+      "Email Writing",
+      "Formatting Tools",
+      "Shortcuts & Tips",
+      "Mini Tasks"
+    ]
   },
   {
     id: 18,
-    title: "Advance EXCEL",
+    title: "Advanced Excel",
     image: "/assests/images/ms2.webp",
-    description: "Fully managed database service for transactions, real-time analytics across data warehouses.",
-    link: "/aexcel"
+    longDescription: "Advanced Excel teaches formulas, pivot tables, dashboards, charts, data analysis, VBA basics, and automation techniques.",
+    syllabus: [
+      "Advanced Formulas",
+      "Conditional Formatting",
+      "Pivot Tables",
+      "Excel Charts",
+      "Power Query Basics",
+      "Data Cleaning",
+      "Macros & VBA",
+      "Dashboard Project"
+    ]
   },
   {
     id: 19,
     title: "Tally ERP9 with GST",
     image: "/assests/images/ms3.webp",
-    description: "Fully managed database service for transactions, real-time analytics across data warehouses.",
-    link: "/tally"
+    longDescription: "This course covers accounting fundamentals, Tally ERP9 usage, GST configuration, reports, and business accounting workflows.",
+    syllabus: [
+      "Accounting Basics",
+      "Tally Navigation",
+      "Voucher Entry",
+      "GST Setup",
+      "Inventory Management",
+      "Bank Reconciliation",
+      "Payroll",
+      "Reports & Statements"
+    ]
   },
   {
     id: 20,
-    title: "SAP- FICO",
+    title: "SAP FICO",
     image: "/assests/images/ms4.webp",
-    description: "Fully managed database service for transactions, real-time analytics across data warehouses.",
-    link: "/sap"
+    longDescription: "SAP FICO is a high-demand course covering financial accounting and controlling modules used in enterprise ERP systems.",
+    syllabus: [
+      "SAP Introduction",
+      "General Ledger",
+      "Accounts Payable",
+      "Accounts Receivable",
+      "Asset Accounting",
+      "Cost Center Accounting",
+      "Internal Orders",
+      "SAP Project"
+    ]
+  },
+  // ************************************
+  //      CAD COURSES – MECHANICAL
+  // ************************************
+  {
+    id: 21,
+    title: "AutoCAD Mechanical",
+    image: "/assests/img/c1.webp",
+    longDescription: "AutoCAD Mechanical is a specialized version of AutoCAD designed exclusively for mechanical engineering design. It is used for creating precise 2D drawings, diagrams, and mechanical parts drafting.",
+    syllabus: [
+      "2D Sketching Tools",
+      "Dimensioning & Annotations",
+      "Layers & Blocks",
+      "Assembly Drawings",
+      "Sheet Drafting",
+      "Sectional Views",
+      "Isometric Drawings",
+      "Project Work"
+    ]
+  },
+  {
+    id: 22,
+    title: "SolidWorks",
+    image: "/assests/img/c2.webp",
+    longDescription: "SolidWorks is a 3D CAD software used for parametric modeling, mechanical design, and simulation. Learn part design, assemblies, drawings, and motion simulation.",
+    syllabus: [
+      "Sketch Tools",
+      "Part Modeling",
+      "Assemblies",
+      "Drawing Sheets",
+      "Surface Modeling",
+      "Sheet Metal",
+      "Simulation Basics",
+      "Final Project"
+    ]
+  },
+  {
+    id: 23,
+    title: "CATIA",
+    image: "/assests/img/c3.webp",
+    longDescription: "CATIA is widely used in aerospace and automotive industries for advanced product design and surface modeling.",
+    syllabus: [
+      "Part Design",
+      "Wireframe Modeling",
+      "Surface Modeling",
+      "Assembly Design",
+      "Drafting Techniques",
+      "Kinematics Basics",
+      "Rendering Tools",
+      "Project"
+    ]
+  },
+  {
+    id: 24,
+    title: "NX CAD",
+    image: "/assests/img/c4.webp",
+    longDescription: "NX CAD is an advanced CAD/CAM/CAE tool used for 3D modeling and engineering product development.",
+    syllabus: [
+      "Sketching Tools",
+      "Part Modeling",
+      "Surface Modeling",
+      "Assembly",
+      "Sheet Metal Design",
+      "Drafting",
+      "CAM Basics",
+      "Industry Project"
+    ]
+  },
+  {
+    id: 25,
+    title: "Ansys",
+    image: "/assests/img/c5.webp",
+    longDescription: "ANSYS is used for engineering simulation and structural analysis. Learn FEA concepts, meshing, stress analysis, and thermal analysis.",
+    syllabus: [
+      "FEA Basics",
+      "Material Assignment",
+      "Meshing Techniques",
+      "Structural Analysis",
+      "Thermal Simulation",
+      "Boundary Conditions",
+      "Solver Setup",
+      "Project"
+    ]
+  },
+  {
+    id: 26,
+    title: "Creo",
+    image: "/assests/img/c6.webp",
+    longDescription: "Creo is a parametric 3D CAD tool used for product design, sheet metal, surface modeling, and manufacturing.",
+    syllabus: [
+      "Sketching",
+      "Part Modeling",
+      "Assembly",
+      "Surface Modeling",
+      "Sheet Metal",
+      "Drafting & Views",
+      "Rendering Tools",
+      "Mini Project"
+    ]
+  },
+  {
+    id: 27,
+    title: "Fusion 360",
+    image: "/assests/img/c7.webp",
+    longDescription: "Fusion 360 is a cloud-based CAD/CAM/CAE solution used for parametric design, simulation, and manufacturing.",
+    syllabus: [
+      "Interface & Tools",
+      "Sketching",
+      "3D Modeling",
+      "Joints & Assemblies",
+      "Simulation Tools",
+      "CAM Basics",
+      "Rendering",
+      "Final Project"
+    ]
+  },
+  {
+    id: 28,
+    title: "GD&T",
+    image: "/assests/img/c8.webp",
+    longDescription: "GD&T is a symbolic language used to define and communicate engineering tolerances clearly and precisely.",
+    syllabus: [
+      "GD&T Basics",
+      "Symbols & Meanings",
+      "Datums & Features",
+      "Form Tolerances",
+      "Profile Tolerances",
+      "Orientation Tolerances",
+      "Location Tolerances",
+      "Industry Examples"
+    ]
+  },
+  // ************************************
+  //           CAD – CIVIL
+  // ************************************
+  {
+    id: 29,
+    title: "AutoCAD Civil 3D",
+    image: "/assests/img/d1.webp",
+    longDescription: "AutoCAD Civil 3D is used by civil engineers for infrastructure design and documentation, including roads, land development, and survey data.",
+    syllabus: [
+      "Civil 3D Interface",
+      "Surfaces Creation",
+      "Alignments",
+      "Profiles & Corridors",
+      "Grading Tools",
+      "Pipe Networks",
+      "Quantity Takeoff",
+      "Project"
+    ]
+  },
+  {
+    id: 30,
+    title: "STAAD Pro",
+    image: "/assests/img/d2.webp",
+    longDescription: "STAAD Pro is widely used for structural analysis and design of buildings, bridges, towers, and industrial structures.",
+    syllabus: [
+      "Structural Analysis Basics",
+      "Modeling Tools",
+      "Load Types & Combinations",
+      "Steel Structure Design",
+      "Concrete Structure Design",
+      "Seismic Analysis",
+      "Output Interpretation",
+      "Real-Time Project"
+    ]
+  },
+  {
+    id: 31,
+    title: "ETABS",
+    image: "/assests/img/d3.webp",
+    longDescription: "ETABS is a powerful building analysis and design software widely used in high-rise structure design.",
+    syllabus: [
+      "Model Creation",
+      "Load Application",
+      "Analysis Techniques",
+      "Shear Wall Design",
+      "Slab & Beam Design",
+      "Dynamic Analysis",
+      "Earthquake Load Design",
+      "Final Project"
+    ]
+  },
+  {
+    id: 32,
+    title: "Civil 3D (General)",
+    image: "/assests/img/d5.webp",
+    longDescription: "Civil 3D software helps civil engineers design better infrastructure such as roads, drainage, grading, and land development.",
+    syllabus: [
+      "Survey Tools",
+      "Surface Modeling",
+      "Alignments & Profiles",
+      "Corridor Modeling",
+      "Earthwork Calculations",
+      "Pipe Networks",
+      "Plan Production",
+      "Hands-on Practice"
+    ]
+  },
+  {
+    id: 33,
+    title: "Revit Structure",
+    image: "/assests/img/d4.webp",
+    longDescription: "Revit Structure helps engineers design accurate structural models including beams, columns, slabs, and reinforcement.",
+    syllabus: [
+      "BIM Basics",
+      "Structural Elements",
+      "Reinforcement Tools",
+      "Analytical Models",
+      "Schedules & Sheets",
+      "3D Views",
+      "RCC Modeling",
+      "Final Project"
+    ]
+  },
+  // ************************************
+  //         CAD – ARCHITECTURE
+  // ************************************
+  {
+    id: 34,
+    title: "Revit Architecture",
+    image: "/assests/img/e6.webp",
+    longDescription: "Revit Architecture is used by architects for 3D building modeling, visualizations, and documentation using BIM workflow.",
+    syllabus: [
+      "BIM Workflow",
+      "Walls, Doors & Windows",
+      "Floors & Roofs",
+      "Stairs & Railings",
+      "Interior Modeling",
+      "Rendering",
+      "Sheets & Documentation",
+      "Project Work"
+    ]
+  },
+  {
+    id: 35,
+    title: "3ds Max",
+    image: "/assests/img/e2.webp",
+    longDescription: "3ds Max is an industry standard for architectural visualization and 3D animation, ideal for interior/exterior rendering.",
+    syllabus: [
+      "3D Modeling Tools",
+      "Lighting Techniques",
+      "Materials & Shaders",
+      "Camera Setup",
+      "Interior & Exterior Modeling",
+      "Rendering Workflow",
+      "V-Ray Integration",
+      "Visualization Project"
+    ]
+  },
+  {
+    id: 36,
+    title: "V-Ray",
+    image: "/assests/img/e1.webp",
+    longDescription: "V-Ray is a high-quality rendering engine used with 3D software for photorealistic architectural visuals.",
+    syllabus: [
+      "V-Ray Basics",
+      "Lighting Setups",
+      "Material Creation",
+      "HDRI Usage",
+      "Render Settings",
+      "Interior Rendering",
+      "Exterior Rendering",
+      "Portfolio Project"
+    ]
+  },
+  {
+    id: 37,
+    title: "Lumion",
+    image: "/assests/img/e3.webp",
+    longDescription: "Lumion is a powerful real-time visualization tool used for creating realistic architecture renders and walkthroughs.",
+    syllabus: [
+      "Lumion Interface",
+      "Scene Setup",
+      "Material Editing",
+      "Lighting Techniques",
+      "Animation Walkthroughs",
+      "Rendering Settings",
+      "Effects & Filters",
+      "Architectural Project"
+    ]
+  },
+  {
+    id: 38,
+    title: "Google SketchUp",
+    image: "/assests/img/e4.webp",
+    longDescription: "SketchUp is a user-friendly 3D modeling software ideal for architectural concept design and interior space planning.",
+    syllabus: [
+      "Sketch Tools",
+      "3D Modeling Basics",
+      "Components & Groups",
+      "Material Application",
+      "Layout Tools",
+      "Rendering Plugins",
+      "Interior Design Modeling",
+      "Mini Project"
+    ]
+  },
+  {
+    id: 39,
+    title: "AutoCAD Architecture",
+    image: "/assests/img/e5.webp",
+    longDescription: "AutoCAD Architecture is used for creating detailed architectural drawings including plans, sections, and elevations.",
+    syllabus: [
+      "Architectural Tools",
+      "Wall & Door Systems",
+      "3D Modeling",
+      "Sections & Elevations",
+      "Annotation Tools",
+      "Sheet Creation",
+      "BIM Basics",
+      "Project Assignment"
+    ]
+  },
+  {
+    id: 40,
+    title: "Photoshop for Architecture",
+    image: "/assests/img/e7.webp",
+    longDescription: "Photoshop is used for enhancing architectural images, editing renders, creating presentations, and visualization artwork.",
+    syllabus: [
+      "Photoshop Basics",
+      "Layers & Masks",
+      "Color Correction",
+      "Photo Retouching",
+      "Render Editing",
+      "Architectural Compositing",
+      "Poster & Layout Design",
+      "Final Portfolio"
+    ]
+  },
+  // ************************************
+  //      CAD COURSES – MECHANICAL
+  // ************************************
+  {
+    id: 21,
+    title: "AutoCAD Mechanical",
+    image: "/assests/img/c1.webp",
+    longDescription: "AutoCAD Mechanical is a specialized version designed for mechanical design and manufacturing. It includes tools for creating detailed 2D engineering drawings, annotations, layers, blocks, and drafting automation. This course is ideal for mechanical engineers, designers, and CAD drafters.",
+    syllabus: [
+      "Introduction to Mechanical AutoCAD",
+      "2D Sketching & Drafting Tools",
+      "Layers, Blocks & Attributes",
+      "Dimensioning & Annotation",
+      "Section Views & Isometric Views",
+      "Mechanical Symbols & BOM",
+      "Assembly Drafting",
+      "Mechanical Project Work"
+    ]
+  },
+  {
+    id: 22,
+    title: "SolidWorks",
+    image: "/assests/img/c2.webp",
+    longDescription: "SolidWorks is an industry-leading 3D CAD tool used for parametric modeling, mechanical product design, simulation, motion study, and assembly creation. Widely used in manufacturing and product engineering.",
+    syllabus: [
+      "SolidWorks Interface & Sketch Tools",
+      "Part Modeling – Extrude, Revolve",
+      "Assembly Creation",
+      "Surface Modeling",
+      "Sheet Metal Design",
+      "Weldments & Frames",
+      "Motion Study & Simulation",
+      "Final Mechanical Project"
+    ]
+  },
+  {
+    id: 23,
+    title: "CATIA",
+    image: "/assests/img/c3.webp",
+    longDescription: "CATIA is an advanced CAD software used in aerospace, automotive, and industrial engineering. It supports complex product design, surface modeling, and assembly management.",
+    syllabus: [
+      "CATIA Interface",
+      "Sketcher Module",
+      "Part Design",
+      "Assembly Design",
+      "Wireframe Modeling",
+      "Surface Modeling",
+      "Drafting & Views",
+      "Industry Standard Project"
+    ]
+  },
+  {
+    id: 24,
+    title: "NX CAD",
+    image: "/assests/img/c4.webp",
+    longDescription: "NX CAD (Siemens) is a high-end CAD/CAM/CAE tool used for automotive and manufacturing industries. It helps in complex 3D modeling, assemblies, drafting, and product development.",
+    syllabus: [
+      "Introduction to NX CAD",
+      "Sketch Environment",
+      "Part & Feature Modeling",
+      "Advanced Surfacing",
+      "Assembly Design Tools",
+      "Sheet Metal Design",
+      "Drafting & Detailing",
+      "Design Project"
+    ]
+  },
+  {
+    id: 25,
+    title: "Ansys",
+    image: "/assests/img/c5.webp",
+    longDescription: "ANSYS is a leading engineering simulation tool used for finite element analysis, thermal analysis, stress testing, vibration analysis, and structural analysis. It is widely used in mechanical and civil industries.",
+    syllabus: [
+      "Basics of FEA",
+      "Static Structural Analysis",
+      "Thermal Analysis",
+      "Meshing Techniques",
+      "Material Properties",
+      "Boundary Conditions",
+      "Modal Analysis",
+      "Simulation Project"
+    ]
+  },
+  {
+    id: 26,
+    title: "Creo",
+    image: "/assests/img/c6.webp",
+    longDescription: "Creo (Pro/E) is a professional CAD tool used for mechanical product design. Learn 3D modeling, surface design, sheet metal, assemblies, and rendering.",
+    syllabus: [
+      "Creo Interface",
+      "Feature-Based Modeling",
+      "Surface Modeling",
+      "Assembly Design",
+      "Sheet Metal Module",
+      "2D Drafting",
+      "Rendering Tools",
+      "Mechanical Design Project"
+    ]
+  },
+  {
+    id: 27,
+    title: "Fusion 360",
+    image: "/assests/img/c7.webp",
+    longDescription: "Fusion 360 is a cloud-based CAD/CAM/CAE platform from Autodesk. Used for product design, simulation, manufacturing, CNC machining, and rendering.",
+    syllabus: [
+      "Fusion Interface",
+      "Sketching Tools",
+      "3D Modeling – Form, Solid",
+      "Assemblies & Joints",
+      "Simulation & Stress Testing",
+      "CAM & Manufacturing Tools",
+      "Rendering & Animation",
+      "Fusion Design Project"
+    ]
+  },
+  {
+    id: 28,
+    title: "GD&T",
+    image: "/assests/img/c8.webp",
+    longDescription: "Geometric Dimensioning & Tolerancing is a symbolic language used to define size, form, orientation, and location tolerances in engineering drawings. It ensures better communication and accuracy.",
+    syllabus: [
+      "GD&T Introduction",
+      "Datums & Features",
+      "Form Tolerances",
+      "Profile Tolerances",
+      "Orientation Tolerances",
+      "Location Tolerances",
+      "Runout & Composite Tolerancing",
+      "Industry-Level GD&T Case Studies"
+    ]
+  },
+  // ************************************
+  //             CAD – CIVIL
+  // ************************************
+  {
+    id: 29,
+    title: "AutoCAD Civil 3D",
+    image: "/assests/img/d1.webp",
+    longDescription: "AutoCAD Civil 3D is widely used for infrastructure design, land development, highway engineering, survey drafting, and drainage systems. It helps civil engineers create accurate civil models.",
+    syllabus: [
+      "Civil 3D Interface",
+      "Survey Data & Points",
+      "Surface Modeling",
+      "Alignments & Profiles",
+      "Corridor Modeling",
+      "Pipe Networks",
+      "Grading & Earthwork",
+      "Complete Civil Project"
+    ]
+  },
+  {
+    id: 30,
+    title: "STAAD Pro",
+    image: "/assests/img/d2.webp",
+    longDescription: "STAAD Pro is a structural analysis and design tool used worldwide for designing buildings, towers, bridges, and concrete or steel structures.",
+    syllabus: [
+      "STAAD Interface",
+      "Modeling Tools",
+      "Load Definitions",
+      "Steel Structure Design",
+      "Concrete Structure Design",
+      "Seismic + Wind Load Analysis",
+      "Result Interpretation",
+      "Structural Project"
+    ]
+  },
+  {
+    id: 31,
+    title: "ETABS",
+    image: "/assests/img/d3.webp",
+    longDescription: "ETABS is primarily used for high-rise and complex building design. It supports advanced structural analysis, earthquake-resistant design, and load calculations.",
+    syllabus: [
+      "ETABS Basics",
+      "Grid & Story Setup",
+      "Load Assignments",
+      "Analysis Tools",
+      "Shear Wall Design",
+      "Slab & Beam Design",
+      "Dynamic Analysis",
+      "Building Design Project"
+    ]
+  },
+  {
+    id: 32,
+    title: "Civil 3D (General)",
+    image: "/assests/img/d5.webp",
+    longDescription: "Civil 3D is used for civil infrastructure design such as highways, grading, pipes, and terrain modeling. Ideal for land surveyors and civil engineers.",
+    syllabus: [
+      "Survey Tools & Surfaces",
+      "Alignments & Profiles",
+      "Corridors & Cross Sections",
+      "Earthworks & Quantity Takeoff",
+      "Pipe Network Design",
+      "Grading Tools",
+      "Sheet Production",
+      "Civil Drafting Project"
+    ]
+  },
+  {
+    id: 33,
+    title: "Revit Structure",
+    image: "/assests/img/d4.webp",
+    longDescription: "Revit Structure helps engineers design RCC and steel structures using BIM. This includes modeling beams, columns, slabs, reinforcement, and schedules.",
+    syllabus: [
+      "BIM Concepts",
+      "Structural Grids",
+      "Beams, Columns & Slabs",
+      "Reinforcement Tools",
+      "Footings & Foundation",
+      "Analytical Model",
+      "Sheets & Documentation",
+      "Revit Structure Project"
+    ]
+  },
+  // ************************************
+  //        CAD – ARCHITECTURE
+  // ************************************
+  {
+    id: 34,
+    title: "Revit Architecture",
+    image: "/assests/img/e6.webp",
+    longDescription: "Revit Architecture is used for 3D building modeling, floor plans, elevations, interiors, and BIM-based architectural workflows. Essential for architects and interior designers.",
+    syllabus: [
+      "BIM Workflow",
+      "Walls, Doors & Windows",
+      "Floors & Roofs",
+      "Stairs & Railings",
+      "Room Tags & Schedules",
+      "Interior Modeling",
+      "Rendering & Walkthrough",
+      "Architecture Project"
+    ]
+  },
+  {
+    id: 35,
+    title: "3ds Max",
+    image: "/assests/img/e2.webp",
+    longDescription: "3ds Max is popular for architectural visualization, 3D modeling, animation, and realistic rendering. Used by architects and 3D designers.",
+    syllabus: [
+      "Modeling Tools",
+      "Materials & Maps",
+      "Lighting Techniques",
+      "Cameras & Walkthrough",
+      "Exterior Modeling",
+      "Interior Modeling",
+      "Rendering Techniques",
+      "Visualization Project"
+    ]
+  },
+  {
+    id: 36,
+    title: "V-Ray",
+    image: "/assests/img/e1.webp",
+    longDescription: "V-Ray is a rendering engine used to create photorealistic architectural visuals with advanced lighting, materials, and HDRI setups.",
+    syllabus: [
+      "V-Ray Setup",
+      "Lighting Tools",
+      "Material Creation",
+      "HDRI Environment",
+      "Interior Rendering",
+      "Exterior Rendering",
+      "Render Optimization",
+      "Architectural Render Project"
+    ]
+  },
+  {
+    id: 37,
+    title: "Lumion",
+    image: "/assests/img/e3.webp",
+    longDescription: "Lumion is a real-time rendering tool that helps architects and interior designers create stunning visualizations, animations, and walk-through videos.",
+    syllabus: [
+      "Lumion Essentials",
+      "Material Editing",
+      "Landscape & Environment",
+      "Lighting Techniques",
+      "Photo Mode Rendering",
+      "Animation & Walkthroughs",
+      "Effects & Filters",
+      "Final Visualization Project"
+    ]
+  },
+  {
+    id: 38,
+    title: "Google SketchUp",
+    image: "/assests/img/e4.webp",
+    longDescription: "SketchUp is widely used for quick 3D modeling, conceptual design, interior layouts, and architectural modeling.",
+    syllabus: [
+      "Sketch Tools",
+      "3D Modeling Basics",
+      "Groups & Components",
+      "Material Painting",
+      "Styles & Layout",
+      "Rendering Plugins",
+      "Interior Design Modeling",
+      "SketchUp Project"
+    ]
+  },
+  {
+    id: 39,
+    title: "AutoCAD Architecture",
+    image: "/assests/img/e5.webp",
+    longDescription: "AutoCAD Architecture is used to create detailed architectural plans, elevations, and section drawings with dedicated building tools.",
+    syllabus: [
+      "Architecture Toolset",
+      "Wall, Door & Window Systems",
+      "3D Building Modeling",
+      "Sections & Elevations",
+      "Annotation Tools",
+      "Plotting & Documentation",
+      "Sheet Creation",
+      "Architecture Drafting Project"
+    ]
+  },
+  {
+    id: 40,
+    title: "Photoshop for Architecture",
+    image: "/assests/img/e7.webp",
+    longDescription: "Photoshop is used by architects to enhance renders, create presentations, edit images, and produce stunning architectural visualizations.",
+    syllabus: [
+      "Photoshop Basics",
+      "Layers & Masks",
+      "Color Balancing",
+      "Render Editing",
+      "Shadow & Light Adjustments",
+      "Architectural Compositing",
+      "Poster Creation",
+      "Portfolio Project"
+    ]
   }
-];
-const cadMechanical = [
-  { id: 21, title: "AutoCAD Mechanical", image: "/assests/img/c1.webp", description: "AutoCAD tool used for 2D mechanical drafting." },
-  { id: 22, title: "SolidWorks", image: "/assests/img/c2.webp", description: "3D CAD tool for mechanical modeling and simulation." },
-  { id: 23, title: "CATIA", image: "/assests/img/c3.webp", description: "Advanced CAD tool used in automotive & aerospace." },
-  { id: 24, title: "NX CAD", image: "/assests/img/c4.webp", description: "High-end CAD/CAM/CAE software." },
-  { id: 25, title: "Ansys", image: "/assests/img/c5.webp", description: "Finite element analysis and simulation." },
-  { id: 26, title: "Creo", image: "/assests/img/c6.webp", description: "Parametric 3D CAD for product design." },
-  { id: 27, title: "Fusion 360", image: "/assests/img/c7.webp", description: "Cloud CAD/CAM for design and manufacturing." },
-  { id: 28, title: "GD&T", image: "/assests/img/c8.webp", description: "Engineering tolerancing and dimensioning standards." }
-];
-const cadCivil = [
-  { id: 29, title: "AutoCAD Civil 3D", image: "/assests/img/d1.webp", description: "Civil engineering design and documentation." },
-  { id: 30, title: "STAAD Pro", image: "/assests/img/d2.webp", description: "Structural analysis and design." },
-  { id: 31, title: "ETABS", image: "/assests/img/d3.webp", description: "Building analysis and design." },
-  { id: 32, title: "Civil 3D (General)", image: "/assests/img/d5.webp", description: "Infrastructure design tools." },
-  { id: 33, title: "Revit Structure", image: "/assests/img/d4.webp", description: "BIM for structural design." }
-];
-const cadArchitecture = [
-  { id: 34, title: "Revit Architecture", image: "/assests/img/e6.webp", description: "BIM-based architectural design." },
-  { id: 35, title: "3ds Max", image: "/assests/img/e2.webp", description: "3D visualization and rendering." },
-  { id: 36, title: "V-Ray", image: "/assests/img/e1.webp", description: "Photorealistic rendering engine." },
-  { id: 37, title: "Lumion", image: "/assests/img/e3.webp", description: "Real-time architectural renders." },
-  { id: 38, title: "Google SketchUp", image: "/assests/img/e4.webp", description: "Easy 3D modeling software." },
-  { id: 39, title: "AutoCAD Architecture", image: "/assests/img/e5.webp", description: "Architectural design drafting tool." },
-  { id: 40, title: "Photoshop for Architecture", image: "/assests/img/e7.webp", description: "Architectural image enhancement." }
 ];
 const AllPrograms = () => {
   const [activeTab, setActiveTab] = useState("itdesk");
   const [activeCadTab, setActiveCadTab] = useState("mechanical");
   const getCourses = () => {
-    if (activeTab === "itdesk") return itCoursesData;
+    if (activeTab === "itdesk") {
+      return allCourses.filter((course) => course.id >= 1 && course.id <= 20);
+    }
     if (activeTab === "cad") {
-      if (activeCadTab === "mechanical") return cadMechanical;
-      if (activeCadTab === "civil") return cadCivil;
-      if (activeCadTab === "architecture") return cadArchitecture;
+      if (activeCadTab === "mechanical") {
+        return allCourses.filter((course) => course.id >= 21 && course.id <= 28);
+      }
+      if (activeCadTab === "civil") {
+        return allCourses.filter((course) => course.id >= 29 && course.id <= 33);
+      }
+      if (activeCadTab === "architecture") {
+        return allCourses.filter((course) => course.id >= 34 && course.id <= 40);
+      }
     }
     return [];
   };
@@ -2740,70 +3563,106 @@ const AllPrograms = () => {
       }
     ) }),
     /* @__PURE__ */ jsx("div", { className: "breadcrumb-area", children: /* @__PURE__ */ jsx("div", { className: "container", children: /* @__PURE__ */ jsx("div", { className: "row", children: /* @__PURE__ */ jsx("div", { className: "col-12", children: /* @__PURE__ */ jsx("div", { className: "breadcrumb_box text-center", children: /* @__PURE__ */ jsx("h1", { className: "breadcrumb-title", style: { color: "#000000ff" }, children: "All Programs" }) }) }) }) }) }),
-    /* @__PURE__ */ jsxs("div", { style: { display: "flex", justifyContent: "center", marginBottom: "20px", gap: "15px", flexWrap: "wrap" }, children: [
-      /* @__PURE__ */ jsx(
-        "button",
-        {
-          onClick: () => setActiveTab("itdesk"),
-          style: {
-            padding: "12px 28px",
-            borderRadius: "30px",
-            border: "none",
-            fontSize: "16px",
-            fontWeight: "600",
-            cursor: "pointer",
-            transition: "all 0.3s ease",
-            background: activeTab === "itdesk" ? "linear-gradient(135deg, #007bff, #00d4ff)" : "#f0f0f0",
-            color: activeTab === "itdesk" ? "#fff" : "#333",
-            boxShadow: activeTab === "itdesk" ? "0 4px 12px rgba(0, 123, 255, 0.4)" : "0 2px 6px rgba(0,0,0,0.1)"
-          },
-          children: "IT Courses"
-        }
-      ),
-      /* @__PURE__ */ jsx(
-        "button",
-        {
-          onClick: () => setActiveTab("cad"),
-          style: {
-            padding: "12px 28px",
-            borderRadius: "30px",
-            border: "none",
-            fontSize: "16px",
-            fontWeight: "600",
-            cursor: "pointer",
-            transition: "all 0.3s ease",
-            background: activeTab === "cad" ? "linear-gradient(135deg, #28a745, #85e085)" : "#f0f0f0",
-            color: activeTab === "cad" ? "#fff" : "#333",
-            boxShadow: activeTab === "cad" ? "0 4px 12px rgba(40, 167, 69, 0.4)" : "0 2px 6px rgba(0,0,0,0.1)"
-          },
-          children: "CAD Courses"
-        }
-      )
-    ] }),
-    activeTab === "cad" && /* @__PURE__ */ jsx("div", { style: { display: "flex", justifyContent: "center", marginBottom: "25px", gap: "12px", flexWrap: "wrap" }, children: [
-      { key: "mechanical", label: "Mechanical CAD", gradient: "linear-gradient(135deg, #ff5733, #ffbd69)" },
-      { key: "civil", label: "Civil CAD", gradient: "linear-gradient(135deg, #6f42c1, #c29fff)" },
-      { key: "architecture", label: "Architecture CAD", gradient: "linear-gradient(135deg, #fd7e14, #f9d29d)" }
-    ].map((tab) => /* @__PURE__ */ jsx(
-      "button",
+    /* @__PURE__ */ jsxs(
+      "div",
       {
-        onClick: () => setActiveCadTab(tab.key),
         style: {
-          padding: "10px 22px",
-          borderRadius: "25px",
-          border: "none",
-          fontSize: "15px",
-          fontWeight: "600",
-          cursor: "pointer",
-          transition: "all 0.3s ease",
-          background: activeCadTab === tab.key ? tab.gradient : "#f8f9fa",
-          color: activeCadTab === tab.key ? "#fff" : "#333",
-          boxShadow: activeCadTab === tab.key ? "0 4px 10px rgba(0,0,0,0.3)" : "0 2px 6px rgba(0,0,0,0.1)"
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "20px",
+          gap: "15px",
+          flexWrap: "wrap"
         },
-        children: tab.label
-      },
-      tab.key
-    )) }),
+        children: [
+          /* @__PURE__ */ jsx(
+            "button",
+            {
+              onClick: () => setActiveTab("itdesk"),
+              style: {
+                padding: "12px 28px",
+                borderRadius: "30px",
+                border: "none",
+                fontSize: "16px",
+                fontWeight: "600",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+                background: activeTab === "itdesk" ? "linear-gradient(135deg, #007bff, #00d4ff)" : "#f0f0f0",
+                color: activeTab === "itdesk" ? "#fff" : "#333",
+                boxShadow: activeTab === "itdesk" ? "0 4px 12px rgba(0, 123, 255, 0.4)" : "0 2px 6px rgba(0,0,0,0.1)"
+              },
+              children: "IT Courses"
+            }
+          ),
+          /* @__PURE__ */ jsx(
+            "button",
+            {
+              onClick: () => setActiveTab("cad"),
+              style: {
+                padding: "12px 28px",
+                borderRadius: "30px",
+                border: "none",
+                fontSize: "16px",
+                fontWeight: "600",
+                cursor: "pointer",
+                transition: "all 0.3s ease",
+                background: activeTab === "cad" ? "linear-gradient(135deg, #28a745, #85e085)" : "#f0f0f0",
+                color: activeTab === "cad" ? "#fff" : "#333",
+                boxShadow: activeTab === "cad" ? "0 4px 12px rgba(40, 167, 69, 0.4)" : "0 2px 6px rgba(0,0,0,0.1)"
+              },
+              children: "CAD Courses"
+            }
+          )
+        ]
+      }
+    ),
+    activeTab === "cad" && /* @__PURE__ */ jsx(
+      "div",
+      {
+        style: {
+          display: "flex",
+          justifyContent: "center",
+          marginBottom: "25px",
+          gap: "12px",
+          flexWrap: "wrap"
+        },
+        children: [
+          {
+            key: "mechanical",
+            label: "Mechanical CAD",
+            gradient: "linear-gradient(135deg, #ff5733, #ffbd69)"
+          },
+          {
+            key: "civil",
+            label: "Civil CAD",
+            gradient: "linear-gradient(135deg, #6f42c1, #c29fff)"
+          },
+          {
+            key: "architecture",
+            label: "Architecture CAD",
+            gradient: "linear-gradient(135deg, #fd7e14, #f9d29d)"
+          }
+        ].map((tab) => /* @__PURE__ */ jsx(
+          "button",
+          {
+            onClick: () => setActiveCadTab(tab.key),
+            style: {
+              padding: "10px 22px",
+              borderRadius: "25px",
+              border: "none",
+              fontSize: "15px",
+              fontWeight: "600",
+              cursor: "pointer",
+              transition: "all 0.3s ease",
+              background: activeCadTab === tab.key ? tab.gradient : "#f8f9fa",
+              color: activeCadTab === tab.key ? "#fff" : "#333",
+              boxShadow: activeCadTab === tab.key ? "0 4px 10px rgba(0,0,0,0.3)" : "0 2px 6px rgba(0,0,0,0.1)"
+            },
+            children: tab.label
+          },
+          tab.key
+        ))
+      }
+    ),
     /* @__PURE__ */ jsxs("div", { className: "trending-courses", children: [
       /* @__PURE__ */ jsxs("h3", { className: "title text-capitalize font-weight-light text-dark text-center mb-5", children: [
         getTabTitle(),
@@ -2821,7 +3680,7 @@ const AllPrograms = () => {
             /* @__PURE__ */ jsx("img", { src: course.image, alt: course.title }),
             /* @__PURE__ */ jsx("h2", { children: course.title }),
             /* @__PURE__ */ jsx("p", { children: course.description }),
-            /* @__PURE__ */ jsx("a", { href: `/course/${course.id}`, children: /* @__PURE__ */ jsx("h2", { children: "Learn More" }) })
+            /* @__PURE__ */ jsx(Link, { to: `/course/${course.id}`, state: { course }, children: /* @__PURE__ */ jsx("h2", { children: "Learn More" }) })
           ]
         },
         course.id
@@ -5423,7 +6282,7 @@ const CertificateGenerator = lazy(
   () => import("./assets/CertificateGenerator-B-fe1ylN.js")
 );
 const CourseDetailsPage = lazy(
-  () => import("./assets/CourseDetailsPage-roAt9io-.js")
+  () => import("./assets/CourseDetailsPage-BBAg8YCX.js")
 );
 const AdminPage = lazy(
   () => import("./assets/AdminPage-DA7W_gIA.js")
